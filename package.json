@@ -15,6 +15,19 @@
   "author": "Tomasz Mularczyk",
   "license": "ISC",
   "scripts": {
-    "test": "test"
+    "prepublishOnly": "npm run build",
+    "build": "NODE_ENV=production rollup -c",
+    "lint": "prettier --write ./**/*.js ./*.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "prettier": "^1.13.5",
+    "rollup": "^0.60.1",
+    "rollup-plugin-babel": "^3.0.4"
+  },
+  "peerDependencies": {
+    "react": ">= 15.x.x"
   }
 }
