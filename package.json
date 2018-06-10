@@ -1,6 +1,6 @@
 {
   "name": "react-state-sequencer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility library to help you update react state in a sequence.",
   "homepage": "https://github.com/Tomekmularczyk/react-state-sequencer#readme",
   "main": "index.js",
