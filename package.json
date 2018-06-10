@@ -17,8 +17,8 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "NODE_ENV=production rollup -c",
-    "prettify": "prettier --write ./**/*.js ./*.js",
-    "test": "jest"
+    "prettify": "prettier --write './**/*.js'",
+    "test": "jest src/**/*.test.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -29,6 +29,7 @@
     "prettier": "^1.13.5",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-test-renderer": "^16.4.0",
     "rollup": "^0.60.1",
     "rollup-plugin-babel": "^3.0.4"
   },

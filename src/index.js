@@ -5,9 +5,7 @@ const updateState = (...args) => _this => {
   if (typeof next === "function") {
     const promise = next(_this.state);
     if (typeof promise.then === "function") {
-      promise.then(() =>
-        _this.setState(next, () => updateState(...rest)(_this))
-      );
+      promise.then(() => updateState(...rest)(_this));
       return;
     }
   }
