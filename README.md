@@ -1,4 +1,7 @@
+<div align="center">
 ## react-state-sequencer [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+</div>
+<hr />
 
 `react-state-sequencer` is a utility library that will let you make updates on your local react state in a order.
 
@@ -85,3 +88,6 @@ Be careful when using Promises. You may run into the following error:
 > Warning: Can't call setState (or forceUpdate) on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.
 
 This happens when the component gets unmounted before the Promise resolves (e.g. when a user changes the route). Some function holds a reference to a "dead" component and tries to update it. This should be avoided.
+
+### Why?
+Because I love local state. Yes, that's my chance to express that I like to keep things local unless there is a clear benefit of doing otherwise.

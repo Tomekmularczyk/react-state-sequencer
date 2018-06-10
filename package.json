@@ -1,7 +1,7 @@
 {
   "name": "react-state-sequencer",
   "version": "0.0.1",
-  "description": "Utility library to help update react state in a sequence.",
+  "description": "Utility library to help you update react state in a sequence.",
   "homepage": "https://github.com/Tomekmularczyk/react-state-sequencer#readme",
   "main": "index.js",
   "repository": "git+https://github.com/Tomekmularczyk/react-state-sequencer.git",
@@ -17,13 +17,18 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "NODE_ENV=production rollup -c",
-    "lint": "prettier --write ./**/*.js ./*.js"
+    "prettify": "prettier --write ./**/*.js ./*.js",
+    "test": "jest"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^23.1.0",
     "prettier": "^1.13.5",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "rollup": "^0.60.1",
     "rollup-plugin-babel": "^3.0.4"
   },
