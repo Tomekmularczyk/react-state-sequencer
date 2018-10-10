@@ -87,9 +87,9 @@ export default class App extends React.Component {
 ```
 [![Edit 04j11v7pn0](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/04j11v7pn0)
 
-### Warning
+### WARNING
 
-It's an experimental idea, you may run into two issues:
+It's an experimental idea, and more like a fun project to do. You may run into two issues:
 - race conditions,
 - updating the unmounted component
 
@@ -101,7 +101,7 @@ This happens when the component gets unmounted before the Promise resolves (e.g.
 
 ### Why?
 
-Because I love local state (Yes, that's my chance to express that I like to keep things local unless there is a clear benefit of doing the opposite). Other than that it's just an experimental idea that popped to my head after I had to first unmount a children component before changing a number of a controlled tab (if not I would get a DOM exception).
+Because I like to keep things local unless there is a clear benefit of doing the opposite. Other than that it's just an experimental idea that popped to my head after I had to first unmount a children component before changing a number of a controlled tab (if not I would get a DOM exception).
 
 <!--
 Links:
