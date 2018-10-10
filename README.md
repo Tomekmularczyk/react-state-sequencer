@@ -89,7 +89,7 @@ export default class App extends React.Component {
 
 ### WARNING
 
-It's an experimental idea, and more like a fun project to do. You may run into two issues:
+It's an experimental idea, and most likely not something you should use.  You may run into two issues:
 - race conditions,
 - updating the unmounted component
 
